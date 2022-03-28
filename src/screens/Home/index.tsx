@@ -1,12 +1,21 @@
 import React from 'react';
-import { Text } from 'react-native';
 
-import { Container } from './styles';
+import { Container, Header, Title, Content } from './styles';
+
+import { Card } from '../../components/Card';
 
 export function Home() {
     return (
         <Container>
-            <Text>Home</Text>
+            <Header>
+                <Title>CAMPEONATO BRASILEIRO</Title>
+            </Header>
+
+            <Content>
+                <Card/>
+                <Card/>
+            </Content>
+
         </Container>
     );
 }
